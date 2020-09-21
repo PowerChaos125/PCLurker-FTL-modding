@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="windows-1252"?>
 
-<!---- DLC ITEMS LIST - These items are turned off if the DLC is turned off.
-		Includes any weapons, drones, augments, or aliens 					---> 
+<!-- DLC ITEMS LIST - These items are turned off if the DLC is turned off.
+		Includes any weapons, drones, augments, or aliens 					--> 
 
 <blueprintList name="DLC_ITEMS">
 	<name>BOMB_HEAL_SYSTEM</name>
@@ -87,9 +88,9 @@
 
 
 
-<!-----------------------------
+<!--
 	NEW AUGMENTS
-------------------------------->
+-->
 
 <augBlueprint name="O2_MASKS"> 
 	<title>Emergency Respirators</title>
@@ -200,7 +201,9 @@
 	<value>0.0</value>
 </augBlueprint>
 
-<!------------------------------------------>
+
+
+
 
 <crewBlueprint name="anaerobic">
 	<desc>These anaerobic beings seem friendly enough.</desc>
@@ -214,16 +217,16 @@
 		<power>Slow movement but no damage from lack of oxygen.</power>
 	</powerList>
 	<colorList>
-		<layer><!-- Layer 1 - color -->
-			<color r="196" g="117" b="232" a="0.3"/>
-			<color r="1" g="1" b="1" a="0"/>
-			<color r="1" g="1" b="1" a="0.2"/>
-			<color r="232" g="220" b="117" a="0.5"/>
+		<layer> <!-- Layer 1 - color -->
+			<color r="196" g="117" b="232" a="0.3" />
+			<color r="1" g="1" b="1" a="0" />
+			<color r="1" g="1" b="1" a="0.2" />
+			<color r="232" g="220" b="117" a="0.5" />
 		</layer>
 	</colorList>
 </crewBlueprint>
 
-<!------------------------------------------>
+
 
 
 
@@ -283,7 +286,7 @@
 	<locked>1</locked>
 </systemBlueprint>
 
-<!------------------------------------------>
+<!---->
 
 <droneBlueprint name="BOARDER_ION">
 	<type>BOARDER</type>
@@ -321,15 +324,15 @@
 	<short>Anti-Drone</short>
 	<desc>Stuns combat drones attacking your ship.</desc>
 	<power>1</power>
-	<cooldown>7000</cooldown> <!--- Shooting cooldown for shooting at asteroids/missiles, in ms -->
+	<cooldown>7000</cooldown> <!-- Shooting cooldown for shooting at asteroids/missiles, in ms -->
 	<dodge>0</dodge>
-	<speed>5</speed> <!--- Superficial change.. just makes it fly faster -->
+	<speed>5</speed> <!-- Superficial change.. just makes it fly faster -->
 	<cost>35</cost>
 	<bp>2</bp>
 	<droneImage>drone_anti</droneImage>
-	<!---- WEAPON INFO --->
+	<!-- WEAPON INFO -->
 	<weaponBlueprint>ANTI_DRONE_ION</weaponBlueprint>
-	<!----- -->
+	<!-- -->
 	<rarity>1</rarity>
 	<iconImage>antiD</iconImage>
 </droneBlueprint>
@@ -395,9 +398,9 @@
 	<short>Beam II</short>
 	<desc>Combat drone that repeatedly attacks with a larger beam weapon</desc>
 	<power>3</power>
-	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
+	<cooldown>1000</cooldown> <!-- Doesn't effect combat drone -->
 	<dodge>0</dodge>
-	<speed>11</speed> <!--- Change this to increase/decrease firing speed -->
+	<speed>11</speed> <!-- Change this to increase/decrease firing speed -->
 	<cost>60</cost>
 	<bp>3</bp>
 	<droneImage>drone_beam_2</droneImage>
@@ -432,9 +435,9 @@
 	<short>Fire</short>
 	<desc>Combat drone that repeatedly attacks with a small beam weapon that lights rooms on fire.</desc>
 	<power>3</power>
-	<cooldown>1000</cooldown> <!--- Doesn't effect combat drone -->
+	<cooldown>1000</cooldown> <!-- Doesn't effect combat drone -->
 	<dodge>0</dodge>
-	<speed>12</speed> <!--- Change this to increase/decrease firing speed -->
+	<speed>12</speed> <!-- Change this to increase/decrease firing speed -->
 	<cost>50</cost>
 	<bp>3</bp>
 	<droneImage>drone_fire</droneImage>
@@ -453,9 +456,9 @@
 	<short>Shield</short>
 	<desc>Creates single Supershield barrier periodically.</desc>
 	<power>3</power>
-	<cooldown>15000</cooldown> <!--- cooldown for recharge, in ms -->
+	<cooldown>15000</cooldown> <!-- cooldown for recharge, in ms -->
 	<dodge>0</dodge>
-	<speed>5</speed> <!--- Superficial change.. just makes it fly faster -->
+	<speed>5</speed> <!-- Superficial change.. just makes it fly faster -->
 	<cost>60</cost>
 	<bp>2</bp>
 	<droneImage>drone_shield</droneImage>
@@ -472,9 +475,9 @@
 	<short>Shield+</short>
 	<desc>Creates single Supershield barrier periodically. This modified schematic requires 1 less power.</desc>
 	<power>2</power>
-	<cooldown>15000</cooldown> <!--- cooldown for recharge, in ms -->
+	<cooldown>15000</cooldown> <!-- cooldown for recharge, in ms -->
 	<dodge>0</dodge>
-	<speed>5</speed> <!--- Superficial change.. just makes it fly faster -->
+	<speed>5</speed> <!-- Superficial change.. just makes it fly faster -->
 	<cost>60</cost>
 	<bp>2</bp>
 	<droneImage>drone_shield</droneImage>
@@ -675,7 +678,7 @@
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>21</cooldown>
+	<cooldown>16</cooldown>
 	<power>3</power>
 	<cost>80</cost>
 	<bp>10</bp>
@@ -759,14 +762,14 @@
 	<title>Chain Burst Laser</title>
 	<short>Chain L.</short>
 	<tip>tip_chain_laser</tip>
-	<desc>This dual shot laser decreases in cooldown the more it fires. After 3 volleys it only takes 7 seconds to charge.</desc>
-	<tooltip>Fires two lasers that deal 1 damage each. Cooldown drops the more it fires.</tooltip>
+	<desc>This dual shot laser decreases in cooldown the more it fires. After 3 volleys it only takes 8 seconds to charge.</desc>
+	<tooltip>Fires three lasers that deal 1 damage each. Cooldown drops the more it fires.</tooltip>
 	<damage>1</damage>
-	<shots>2</shots>
+	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>16</cooldown>
+	<cooldown>17</cooldown>
 	<power>2</power>
 	<cost>65</cost>
 	<bp>2</bp>
@@ -851,7 +854,7 @@
 	<short>Chain I.</short>
 	<locked>1</locked>
 	<tip>tip_chain_ion</tip>
-	<desc>This weapon's Ion damage increases each time it fires to a max of 4.</desc>
+	<desc>This ion weapon fire faster after each shot. Cooldown are reduced up to 3 times, reduce 2 seconds each time.</desc>
 	<tooltip>Fires a single blast that does 1 ion damage. Can hit and disable shields as well as systems.</tooltip>
 	<damage>0</damage>
 	<ion>1</ion>
@@ -860,15 +863,16 @@
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>14</cooldown> <!--13-->
+  <stunChance>2</stunChance>
+	<cooldown>8</cooldown> <!--13-->
 	<power>3</power>
 	<cost>55</cost>
 	<bp>3</bp>
 	<rarity>4</rarity>
 	<image>ion_2_shot</image>
 	<boost>
-		<type>damage</type>
-		<amount>1</amount>
+		<type>cooldown</type>
+		<amount>2</amount>
 		<count>3</count>
 	</boost>
 	<explosion>explosion_small_ion</explosion>
@@ -1217,7 +1221,7 @@
 				<number>1</number>
 			</slot>
 		</sensors>    
-		<oxygen power="1" room="2" start="true" img="room_oxygen_2"/>
+		<oxygen power="1" room="2" start="true" img="room_oxygen_2" />
 		<engines power="1" room="7" start="true" img="room_engines_7">
 			<slot>
 				<direction>right</direction>
@@ -1236,7 +1240,7 @@
 				<number>1</number>
 			</slot>
 		</weapons>
-		<drones power="2" room="11" start="false" img="room_drones_9"/> <!--F-->
+		<drones power="2" room="11" start="false" img="room_drones_9" /> <!--F-->
 		<clonebay power="1" room="0" start="true">  
 			<slot>
 				<number>0</number>
@@ -1247,10 +1251,10 @@
 				<number>0</number>
 			</slot>
 		</medbay>
-		<teleporter power="1" room="1" start="false"/>   <!--F-->
-		<cloaking power="1" room="6" start="false" img="room_cloaking_4"/>  <!--F-->
-		<battery power="1" room="10" start="false" img="room_battery_10"/>   <!--F-->
-		<mind power="1" room="13" start="false" img="room_mind_6"/>   <!--F-->
+		<teleporter power="1" room="1" start="false" />   <!--F-->
+		<cloaking power="1" room="6" start="false" img="room_cloaking_4" />  <!--F-->
+		<battery power="1" room="10" start="false" img="room_battery_10" />   <!--F-->
+		<mind power="1" room="13" start="false" img="room_mind_6" />   <!--F-->
 		<hacking power="1" room="3" start="true" img="room_hacking_5">
 			<slot>
 				<direction>up</direction>
@@ -1261,15 +1265,15 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="2" missiles="3">
-		<weapon name="LASER_CHAINGUN"/>
-		<weapon name="ION_STUN"/>
+		<weapon name="LASER_CHAINGUN" />
+		<weapon name="ION_STUN" />
 	</weaponList>
-	<droneList count="0" drones="9"/>
-	<health amount="30"/>
-	<maxPower amount ="8"/> 
-	<crewCount amount = "1" class="human"/>
-	<crewCount amount = "2" class="anaerobic"/>
-	<aug name="O2_MASKS"/>
+	<droneList count="0" drones="9" />
+	<health amount="30" />
+	<maxPower amount="8" /> 
+	<crewCount amount="1" class="human" />
+	<crewCount amount="2" class="anaerobic" />
+	<aug name="O2_MASKS" />
 	<cloakImage>anaerobic_cruiser</cloakImage>
 </shipBlueprint>
 
@@ -1302,7 +1306,7 @@
 				<number>0</number>
 			</slot>
 		</sensors>
-		<oxygen power="1" room="5" start="true"/>
+		<oxygen power="1" room="5" start="true" />
 		<engines power="1" room="8" start="true" img="room_engines_2">
 			<slot>
 				<direction>down</direction>
@@ -1321,7 +1325,7 @@
 				<number>0</number>
 			</slot>
 		</weapons>
-		<drones power="2" room="2" start="false" img="room_drones_7"/> <!--F-->
+		<drones power="2" room="2" start="false" img="room_drones_7" /> <!--F-->
 		<clonebay power="1" room="11" start="true">
 			<slot>
 				<number>2</number>
@@ -1332,10 +1336,10 @@
 				<number>2</number>
 			</slot>
 		</medbay>
-		<teleporter power="1" room="12" start="true"/>  
-		<cloaking power="1" room="1" start="false" img="room_cloaking_3"/> <!--F-->
-		<mind power="1" room="17" start="true" img="room_mind_3"/> 
-		<battery power="1" room="15" start="false" img="room_battery_12"/>  <!--F-->
+		<teleporter power="1" room="12" start="true" />  
+		<cloaking power="1" room="1" start="false" img="room_cloaking_3" /> <!--F-->
+		<mind power="1" room="17" start="true" img="room_mind_3" /> 
+		<battery power="1" room="15" start="false" img="room_battery_12" />  <!--F-->
 		<hacking power="1" room="3" start="false" img="room_hacking_4">  <!--F-->
 			<slot>
 				<direction>up</direction>
@@ -1346,14 +1350,14 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList count="1" missiles="0">
-		<weapon name="SHOTGUN_PLAYER"/>
+		<weapon name="SHOTGUN_PLAYER" />
 	</weaponList>
-	<droneList drones="0"/>
-	<health amount="30"/>
-	<maxPower amount ="8"/> 
-	<crewCount amount = "1" class="engi"/>
-	<crewCount amount = "2" class="anaerobic"/>
-	<aug name="O2_MASKS"/>
+	<droneList drones="0" />
+	<health amount="30" />
+	<maxPower amount="8" /> 
+	<crewCount amount="1" class="engi" />
+	<crewCount amount="2" class="anaerobic" />
+	<aug name="O2_MASKS" />
 	<shieldImage>anaerobic_cruiser</shieldImage>
 	<cloakImage>anaerobic_cruiser</cloakImage>
 </shipBlueprint>
@@ -1361,7 +1365,7 @@
 
 
 
-<!---
+<!--
 
 
 
@@ -1408,9 +1412,9 @@ keeping this in case we need another layout for now
 		</medbay>
 		<teleporter power="1" room="14" start="true"/>  
 		<cloaking power="1" room="3" start="true"/> 
-		<battery power="1" room="13" start="false"/>  <!-- NEEDS Room image 
-		<mind power="1" room="0" start="false"/>  <!-- NEEDS Room image 
-		<hacking power="1" room="1" start="false"/>  <!-- NEEDS Room image 
+		<battery power="1" room="13" start="false"/>-->  <!-- NEEDS Room image 
+		<mind power="1" room="0" start="false"/> -->  <!-- NEEDS Room image 
+		<hacking power="1" room="1" start="false"/> -->  <!-- NEEDS Room image 
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -1454,30 +1458,30 @@ keeping this in case we need another layout for now
 </blueprintList>
 
 
-<!----------------------
+<!--
 ANAEROBIC ENEMY SHIPS  - AUTOBLUEPRINT
-  --------------------->
+  -->
  
   <shipBlueprint name="ANAEROBIC_SCOUT" layout="anaerobic_scout" img="anaerobic_scout">
 	<class>Lanius Scout</class>
 	<maxSector>7</maxSector>
 	<systemList>
-		<pilot power="1"max="3" room="1"/>
-		<clonebay power="1" max="3" room="3" start="false"/>
+		<pilot power="1" max="3" room="1" />
+		<clonebay power="1" max="3" room="3" start="false" />
 		<!--<oxygen power="1" max="3" room="9"/> -->
-		<shields power="2" max="8" room="5"/>
-		<engines power="1" max="5" room="6"/>
-		<weapons power="2" max="8" room="4"/>
-		<doors power="1" max="3" room="0" start="false"/>
-		<hacking power="1" max="3" room="2" start="false"/>
+		<shields power="2" max="8" room="5" />
+		<engines power="1" max="5" room="6" />
+		<weapons power="2" max="8" room="4" />
+		<doors power="1" max="3" room="0" start="false" />
+		<hacking power="1" max="3" room="2" start="false" />
 	</systemList>
-	<weaponList missiles="10" load="WEAPONS_ANAEROBIC"/>
-	<health amount="7"/>	
-	<maxPower amount ="7"/>
-	<crewCount amount = "2" max="3" class="anaerobic"/>
+	<weaponList missiles="10" load="WEAPONS_ANAEROBIC" />
+	<health amount="7" />	
+	<maxPower amount="7" />
+	<crewCount amount="2" max="3" class="anaerobic" />
 	<boardingAI>sabotage</boardingAI>
 	<cloakImage>anaerobic_scout</cloakImage>
-	<aug name="O2_MASKS"/>
+	<aug name="O2_MASKS" />
 </shipBlueprint>
 
 
@@ -1485,22 +1489,23 @@ ANAEROBIC ENEMY SHIPS  - AUTOBLUEPRINT
 	<class>Lanius Bomber</class>
 	<minSector>3</minSector>
 	<systemList>
-		<pilot power="1"max="3" room="3"/>
-		<doors power="1" max="3" room="10" start="false"/>
-		<clonebay power="1" max="3" room="7" start="false"/>
+		<pilot power="1" max="3" room="3" />
+		<doors power="1" max="3" room="10" start="false" />
+		<clonebay power="1" max="3" room="7" start="false" />
 		<!--<oxygen power="1" max="3" room="9"/> -->
-		<shields power="2" max="8" room="0"/>
-		<engines power="1" max="5" room="9"/>
-		<weapons power="2" max="8" room="1"/>
-		<mind power="1" max="2" room="4" start="false"/>
-		<teleporter power="1" max="3" room="8"/>
-		<cloaking power="1" max="3" room="2" start="false"/>
+		<shields power="2" max="8" room="0" />
+		<engines power="1" max="5" room="9" />
+		<weapons power="2" max="8" room="1" />
+		<mind power="1" max="2" room="4" start="false" />
+		<teleporter power="1" max="3" room="8" />
+		<cloaking power="1" max="3" room="2" start="false" />
 	</systemList>
-	<weaponList missiles="10" load="WEAPONS_ANAEROBIC"/>
-	<health amount="9"/>	
-	<maxPower amount ="7"/>
-	<crewCount amount = "3" max="5" class="anaerobic"/>
+	<weaponList missiles="10" load="WEAPONS_ANAEROBIC" />
+	<health amount="9" />	
+	<maxPower amount="7" />
+	<crewCount amount="3" max="5" class="anaerobic" />
 	<boardingAI>sabotage</boardingAI>
 	<cloakImage>anaerobic_bomber</cloakImage>
-	<aug name="O2_MASKS"/>
+	<aug name="O2_MASKS" />
 </shipBlueprint>
+
